@@ -7,9 +7,17 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  // No Nitro: the site is one prerendered page served as static files, so the
+  // Cloudflare worker output it produces is not needed and its .output/ layout
+  // is what breaks the prerender preview server.
+  nitro: false,
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
+    // Prerender the one route to real HTML so the build can be served by a
+    // static host. Without this the output has no index.html at all — the
+    // markup is produced per request by the server bundle.
+    pages: [{ path: "/", prerender: { enabled: true } }],
   },
 });
