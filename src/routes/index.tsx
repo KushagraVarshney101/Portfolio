@@ -480,7 +480,12 @@ function Portfolio() {
               <ExternalLink className="size-3.5" /> read the paper
             </span>
           </a>
-          <div className="h-full rounded-md border border-border bg-panel p-6">
+          <a
+            href="https://drive.google.com/file/d/1A9ghBYoO_M8Jtngl54ehEqbQ6AqAaXjY/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="block h-full rounded-md border border-border bg-panel p-6 transition-all duration-500 hover:-translate-y-1 hover:border-primary/60 hover:shadow-[var(--glow)]"
+          >
             <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
               Education · 2022 – 2026
             </p>
@@ -490,7 +495,10 @@ function Portfolio() {
               Forensics)
             </p>
             <p className="mt-2 text-sm text-primary">First Division with Honours, CPI 8.11</p>
-          </div>
+            <span className="mt-4 inline-flex items-center gap-2 text-xs text-primary">
+              <ExternalLink className="size-3.5" /> view degree
+            </span>
+          </a>
         </Reveal>
       </Section>
 
