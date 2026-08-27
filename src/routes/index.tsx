@@ -519,7 +519,7 @@ function Portfolio() {
               </li>
               <li>
                 <a
-                  href="https://github.com/hacksprob"
+                  href="https://github.com/kushagravarshney101"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="inline-flex items-center gap-3 text-muted-foreground transition-colors duration-300 hover:text-primary"

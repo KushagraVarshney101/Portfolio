@@ -100,7 +100,7 @@ export function Hero() {
 
         <div className="mt-16 flex items-end justify-between lg:mt-28">
           <div data-hero-reveal className="flex flex-col gap-5">
-            <IconLink href="https://github.com/hacksprob" label="GitHub">
+            <IconLink href="https://github.com/kushagravarshney101" label="GitHub">
               <Github className="size-5" />
             </IconLink>
             <IconLink href="https://linkedin.com/in/hacksprob" label="LinkedIn">
