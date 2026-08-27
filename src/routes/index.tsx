@@ -465,13 +465,21 @@ function Portfolio() {
         heading="Writing / Academics"
       >
         <Reveal className="grid gap-6 md:grid-cols-2" stagger={0.12} y={44}>
-          <div className="h-full rounded-md border border-border bg-panel p-6">
+          <a
+            href="https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/686392189334567cb149af2a_D4N6%20MAY%202025%20V2-6%20(1).pdf"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="block h-full rounded-md border border-border bg-panel p-6 transition-all duration-500 hover:-translate-y-1 hover:border-primary/60 hover:shadow-[var(--glow)]"
+          >
             <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Publication</p>
             <p className="mt-3 text-lg leading-snug">
               "The Rise of Deepfakes: Impact, Origins, and Technical Insights"
             </p>
             <p className="mt-2 text-sm text-primary">Cyber Peace Foundation (Jul 2025)</p>
-          </div>
+            <span className="mt-4 inline-flex items-center gap-2 text-xs text-primary">
+              <ExternalLink className="size-3.5" /> read the paper
+            </span>
+          </a>
           <div className="h-full rounded-md border border-border bg-panel p-6">
             <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
               Education · 2022 – 2026
