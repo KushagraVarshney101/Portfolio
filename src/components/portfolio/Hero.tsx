@@ -114,7 +114,7 @@ export function Hero() {
           <a
             ref={resumeRef}
             data-hero-reveal
-            href="https://kushagra.social"
+            href="https://drive.google.com/file/d/1eJsZgMBH7LMPUmEBpAgcNuVnrp7it3rq/view?usp=sharing"
             target="_blank"
             rel="noreferrer noopener"
             className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.28em] text-muted-foreground transition-colors duration-300 hover:text-primary"

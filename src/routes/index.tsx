@@ -50,13 +50,13 @@ const EXPERIENCE = [
     period: "Apr 2026 – Present",
     points: [
       <>
-        Reported a <Hl>High-severity prompt injection flaw</Hl> (Unicode filter bypass) found while
-        testing AI-integrated financial tools; ongoing research covers LLM prompt injection, model
+        Reported a <Hl>prompt injection flaw</Hl> (Unicode filter bypass) found while testing
+        AI-integrated financial tools; ongoing research covers LLM prompt injection, model
         inversion, and adversarial inputs.
       </>,
       <>
-        Build Python tooling that automates remediation validation for Azure-hosted systems, and
-        work with development teams to land fixes through Azure DevOps pipelines.
+        Test Azure-hosted enterprise systems and work with development teams to land fixes through
+        Azure DevOps pipelines.
       </>,
       <>
         Run static and dynamic analysis with Veracode, Semgrep, and SonarQube on multi-tenant
@@ -210,10 +210,10 @@ function Portfolio() {
             Security engineer with 2 years of hands-on experience across application security,
             AI/LLM security, and security automation, most of it in Python. Currently testing
             enterprise financial platforms on Azure at The World Bank Group, where AI security
-            research surfaced a <Hl>High-severity prompt injection flaw</Hl>. Built a production SOC
-            pipeline that ran live in a data center, and <Hl>RedV01</Hl>, an agentic AI penetration
-            testing system. Vulnerability disclosures acknowledged by <Hl>NASA</Hl>, <Hl>Zoho</Hl>,
-            and India's <Hl>NCIIPC</Hl>.
+            research surfaced a <Hl>prompt injection flaw</Hl>. Built a production SOC pipeline that
+            ran live in a data center, and <Hl>RedV01</Hl>, an agentic AI penetration testing
+            system. Vulnerability disclosures acknowledged by <Hl>NASA</Hl>, <Hl>Zoho</Hl>, and
+            India's <Hl>NCIIPC</Hl>.
           </p>
         </Reveal>
         <Reveal className="mt-12 grid gap-4 sm:grid-cols-3" stagger={0.12} y={48}>
