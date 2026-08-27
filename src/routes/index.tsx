@@ -251,10 +251,10 @@ function Portfolio() {
 
       {/* ── Experience ───────────────────────────────────── */}
       <Section id="experience" label="02 / Experience" heading="Work History">
-        <div className="relative border-l border-border pl-6 sm:pl-10">
+        <div className="relative space-y-14 border-l border-border pl-6 sm:space-y-20 sm:pl-10">
           {EXPERIENCE.map((job) => (
             <Reveal key={job.company} y={52} stagger={0.06}>
-              <article className="relative pb-14 last:pb-0">
+              <article className="relative">
                 <span className="absolute -left-[1.9rem] top-2 size-2.5 rounded-full bg-primary accent-glow sm:-left-[2.9rem]" />
                 <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
                   {job.period} · {job.place}
