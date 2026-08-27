@@ -110,11 +110,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   errorComponent: ErrorComponent,
 });
 
+/** GA4 property for kushagra.social. */
+const GA_MEASUREMENT_ID = "G-FHCMLWRFY0";
+
 function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
         <HeadContent />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
+        <script
+          // The page is prerendered to static HTML, so the snippet has to be
+          // inlined here rather than injected at request time.
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_MEASUREMENT_ID}');`,
+          }}
+        />
       </head>
       <body>
         {children}
